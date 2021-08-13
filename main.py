@@ -25,7 +25,7 @@ def add():
     
 
 while True:
-    mode = input("Would you like to add new password or view passwords, please enter ones(add , view), press q to quit()? ")
+    mode = input("\nWould you like to add new password or view passwords, please enter ones(add , view), press q to quit()? ")
     if mode == 'q':
         break
     elif mode == 'add':
