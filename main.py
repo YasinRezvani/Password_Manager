@@ -25,7 +25,7 @@ def add():
     
 
 while True:
-    mode = input("\nWould you like to add new password or view passwords, please enter ones(add , view), press q to quit()? ")
+    mode = input("\nWould you like to add new password or view passwords,\nplease enter ones(add , view), press q to quit()? ")
     if mode == 'q':
         break
     elif mode == 'add':
@@ -33,7 +33,7 @@ while True:
     elif mode == 'view':
         view()
     else: 
-        print("Invalid mode. try again")
+        print("\n--Invalid mode. try again--")
         continue
 
 # Made By Yasin Rezvani
