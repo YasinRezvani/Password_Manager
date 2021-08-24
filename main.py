@@ -16,12 +16,12 @@ def view():
     print(table)
     
 def add():
-    add.account = input("Enter Account Name: ")
-    add.user_a = input("Enter Username: ")
-    add.pass_a = input("Enter Password: ")
+    account = input("Enter Account Name: ")
+    user_a = input("Enter Username: ")
+    pass_a = input("Enter Password: ")
 
     with open("password.txt" , 'a') as qq:
-        qq.write(add.account +" | "+ add.user_a + " | " + add.pass_a +"\n")
+        qq.write(account +" | "+ user_a + " | " + pass_a +"\n")
     
 
 while True:
