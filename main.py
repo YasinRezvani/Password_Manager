@@ -1,19 +1,17 @@
-﻿
-from beautifultable import BeautifulTable
+﻿from prettytable import PrettyTable
 
-table = BeautifulTable()
+x = PrettyTable()
 
 def view():
     with open("password.txt" , "r") as ff:
         for i in ff.readlines():
             data = i.strip()
             acc , user , pas = data.split("|")
-            table.rows.append([acc, user,pas])
-            continue
-                
-    table.set_style(BeautifulTable.STYLE_BOX_ROUNDED)  
-    table.columns.header = ["Account", "Username", "Password"]
-    print(table)
+            x.add_row([acc, user,pas])
+            
+    x.field_names = ["Account", "Username", "Password"]
+    print(x)
+    x.clear_rows()
     
 def add():
     account = input("Enter Account Name: ")
