@@ -3,6 +3,7 @@
 x = PrettyTable()
 
 def view():
+    print("")
     with open("password.txt" , "r") as ff:
         for i in ff.readlines():
             data = i.strip()
@@ -14,13 +15,14 @@ def view():
     x.clear_rows()
     
 def add():
-    account = input("Enter Account Name: ")
-    user_a = input("Enter Username: ")
-    pass_a = input("Enter Password: ")
+    account = input("\nEnter Account Name: ")
+    user_a = input("\nEnter Username: ")
+    pass_a = input("\nEnter Password: ")
 
     with open("password.txt" , 'a') as qq:
         qq.write(account +" | "+ user_a + " | " + pass_a +"\n")
-    
+
+    print(f"\n--- Successfully add a {account} Account to your Password Manager --- \n")
 
 while True:
     mode = input("\nWould you like to add new password or view passwords,\nplease enter ones(add , view), press q to quit()? ")
