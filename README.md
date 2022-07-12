@@ -3,7 +3,7 @@ Simple CLI password manager in terminal to mange your accounts password
 # Install the requirements
 First you should install the requirements:
 ```
-$ pip install prettytable
+pip install prettytable
 ```
 # Demo :tada:
 ### Add
