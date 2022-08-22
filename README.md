@@ -1,5 +1,5 @@
 # Password_Manager
-Simple CLI password manager in terminal to mange your accounts password
+Simple CLI password manager in terminal to manage your account password.
 # Install the requirements
 First you should install the requirements:
 ```
